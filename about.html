@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Geralden Fashion Institute</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .about-hero {
+           background: linear-gradient(rgba(0, 0, 0, 0.377), rgba(0, 0, 0, 0.192)), url('withmachgr.jfif');
+           
+            background-position: center;
+            padding: 150px 0 80px;
+            text-align: center;
+            color: var(--white);
+            margin-top: 80px;
+        }
+
+        .about-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+
+        .about-hero p {
+            font-size: 1.3rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .ceo-section {
+            padding: 80px 0;
+            background-color: var(--pastel);
+        }
+
+        .ceo-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .ceo-image {
+            text-align: center;
+        }
+
+        .ceo-img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+
+        .ceo-speech h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+
+        .ceo-speech .title {
+            font-size: 1.2rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .ceo-speech p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .signature {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-top: 30px;
+        }
+
+        .history-section {
+            padding: 80px 0;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--secondary);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .timeline-content {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            width: 45%;
+            position: relative;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content {
+            left: 0;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            left: 55%;
+        }
+
+        .timeline-year {
+            position: absolute;
+            top: 20px;
+            width: 80px;
+            height: 80px;
+            background: var(--secondary);
+            color: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .mission-vision {
+            background-color: var(--pastel);
+            padding: 80px 0;
+        }
+
+        .mv-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .mv-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .mv-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .mv-icon {
+            font-size: 3rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+
+        .stats-section {
+            padding: 80px 0;
+           background: linear-gradient(rgba(0, 0, 0, 0.377), rgba(0, 0, 0, 0.726)), url('withmachgr.jfif');
+            
+            background-position: center;
+            color: var(--white);
+            text-align: center;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+        }
+
+        .stat-item h3 {
+            font-size: 3rem;
+            color: var(--secondary);
+            margin-bottom: 10px;
+        }
+
+        .stat-item p {
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            .about-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .ceo-container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .timeline::before {
+                left: 30px;
+            }
+
+            .timeline-content {
+                width: calc(100% - 80px);
+                left: 80px !important;
+            }
+
+            .timeline-year {
+                left: 30px;
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h1>Geralden Fashion Institute</span></h1>
+                </a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="index.html#courses">Courses</a></li>
+                    <li><a href="index.html#gallery">Gallery</a></li>
+                    <li><a href="index.html#instructors">Instructors</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="#" id="admin-login-btn">Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <h1>About Geralden Fashion Institute</h1>
+            <p>Where creativity meets excellence in fashion education</p>
+        </div>
+    </section>
+
+    <!-- CEO Speech Section -->
+    <section class="ceo-section">
+        <div class="container">
+            <div class="ceo-container">
+                <div class="ceo-image">
+                    <img src="madstand.jfif" alt="CEO Evalove Andoh" class="ceo-img">
+                    <h3>Evalove Andoh</h3>
+                    <p class="title">Founder & CEO</p>
+                </div>
+                <div class="ceo-speech">
+                    <h2>A Message From Our Founder</h2>
+                    <p>Welcome to Geralden Fashion Institute, where dreams are woven into reality and creativity knows no bounds. For over two decades, I've dedicated my life to the art of fashion, and it is with immense pride that I welcome you to our institution.</p>
+                    
+                    <p>Our journey began in a small shop with just three sewing machines and a vision to transform fashion education. Today, we stand as a beacon of excellence, having nurtured thousands of talented designers who are now shaping the global fashion landscape.</p>
+
+                    <p>At Geralden Fashion Institute, we believe that true fashion education goes beyond technical skills. It's about cultivating a unique creative voice, understanding the cultural significance of clothing, and developing the business acumen to thrive in this dynamic industry.</p>
+
+                   
+                    
+                    <div class="signature">Evalove Andoh</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="history-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Journey</h2>
+                <p>four years of excellence in fashion education</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">2021</div>
+                    <div class="timeline-content">
+                        <h3>The Beginning</h3>
+                        <p>Founded in a small open shop with a vision to revolutionize fashion education. Started with just 12 students.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2022</div>
+                    <div class="timeline-content">
+                        <h3>First Graduation</h3>
+                        <p>Our first graduating class emerged, putting Geralden Fashion Institute on.</p>
+                    </div>
+
+                     <div class="timeline-item">
+                    <div class="timeline-year">2023</div>
+                    <div class="timeline-content">
+                        <h3>First Graduation</h3>
+                        <p>Our first graduating class emerged, putting Geralden Fashion Institute on.</p>
+                    </div>
+                </div>
+
+                 <div class="timeline-item">
+                    <div class="timeline-year">2024</div>
+                    <div class="timeline-content">
+                        <h3>First Graduation</h3>
+                        <p>Our first graduating class emerged, putting Geralden Fashion Institute on.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2025</div>
+                    <div class="timeline-content">
+                        <h3>First Graduation</h3>
+                        <p>Our first graduating class emerged, putting Geralden Fashion Institute on.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="mission-vision">
+        <div class="container">
+            <div class="mv-grid">
+                <div class="mv-card">
+                    <div class="mv-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>To cultivate the next generation of fashion innovators by providing comprehensive education that blends artistic creativity with technical excellence and business acumen.</p>
+                </div>
+                <div class="mv-card">
+                    <div class="mv-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p>To be the world's premier fashion institute, recognized for producing visionary designers who shape global fashion trends and drive sustainable innovation in the industry.</p>
+                </div>
+                <div class="mv-card">
+                    <div class="mv-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Our Values</h3>
+                    <p>Creativity, Excellence, Innovation, Sustainability, and Community. We believe in fashion that inspires, transforms, and makes a positive impact on the world.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>By The Numbers</h2>
+                <p>four years of excellence and Hard Working</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>100+</h3>
+                    <p>Successful Graduates</p>
+                </div>
+                <div class="stat-item">
+                    <h3>2+</h3>
+                    <p>Years of Excellence</p>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Geralden Fashion Institute</h3>
+                    <p>Where creativity meets fashion. Join our prestigious institute and unlock your creative potential<br>We are the number one fashion institute in the suburb of Ga north municipality Accra.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/17kn7rYnCZ/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Courses</h3>
+                    <ul>
+                        <li><a href="#">Fashion Design</a></li>
+                        <li><a href="#">Tailoring</a></li>
+                        <li><a href="#">Fashion Styling</a></li>
+                        <li><a href="#">Textile Design</a></li>
+                        <li><a href="#">Fashion Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Ofankor Barrier, Accra Ghana</li>
+                        <li><i class="fas fa-phone"></i> +233 55 123 4567</li>
+                        <li><i class="fas fa-envelope"></i> info@geraldenfashion.edu</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Geralden Fashion Institute. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Admin Panel (same as index.html) -->
+    <div class="admin-panel" id="adminPanel">
+        <!-- Same admin panel content as index.html -->
+    </div>
+
+    <!-- Login Form (same as index.html) -->
+    <div class="admin-panel" id="loginPanel">
+        <!-- Same login form content as index.html -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

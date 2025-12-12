@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geralden Fashion Institute</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <h1>Geralden-<span>Fashion Institute</span></h1>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" id="admin-login-btn">Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Image Slider -->
+    <div class="image-slider" id="slider">
+        <div class="slider-container">
+            <div class="slide">
+                <img src="grp1.jfif" alt="Fashion Design">
+                <div class="slide-content">
+                    <h3>Master the Art of Fashion Design</h3>
+                    <p>Learn from industry experts and develop your unique design aesthetic</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="grp0.jfif" alt="Fashion Show">
+                <div class="slide-content">
+                    <h3>Annual Student Fashion Show</h3>
+                    <p>Showcase your creations in our prestigious annual fashion event</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="sit.jfif" alt="Tailoring">
+                <div class="slide-content">
+                    <h3>Precision Tailoring Techniques</h3>
+                    <p>Master the art of garment construction and pattern making</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="withmachgr.jfif" alt="Fashion Styling">
+                <div class="slide-content">
+                    <h3>Creative Fashion Styling</h3>
+                    <p>Develop your eye for style and create compelling fashion narratives</p>
+                </div>
+            </div>
+            
+            
+        </div>
+        <button class="slider-btn prev-btn">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="slider-btn next-btn">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="slider-nav">
+            <div class="slider-dot active"></div>
+            <div class="slider-dot"></div>
+            <div class="slider-dot"></div>
+            <div class="slider-dot"></div>
+           
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <h1>Where Creativity Meets Fashion,</h1>
+            <p>Join our prestigious fashion design school and unlock your creative potential with industry-leading instructors and We are the number one fashion institute in the suburb of Ga north municipality Accra..</p>
+            <div class="hero-btns">
+                <a href="#courses" class="btn">Explore Courses</a>
+                <a href="#contact" class="btn btn-outline">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Us</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Expert Instructors</h3>
+                    <p>Learn from industry professionals with years of experience in fashion design and styling.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Career Opportunities</h3>
+                    <p>Our graduates work with top fashion houses and brands around the world.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Hands-on Learning</h3>
+                    <p>Get practical experience with our state-of-the-art facilities and equipment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Courses</h2>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-img" style="background-image: url('art.jfif');"></div>
+                    <div class="course-content">
+                        <h3>Fashion Design</h3>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i>3 years</span>
+                            <span><i class="fas fa-user-graduate"></i> Master</span>
+                        </div>
+                        <p>Master the art of fashion design from concept to creation with our comprehensive program.</p>
+                        <a href="#contact" class="btn">Register Now</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-img" style="background-image: url('unnamed.jpg');"></div>
+                    <div class="course-content">
+                        <h3>Tailoring & Pattern Making</h3>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 3 years</span>
+                            <span><i class="fas fa-user-graduate"></i> Master </span>
+                        </div>
+                        <p>Learn precision tailoring and pattern making techniques for custom garment creation.</p>
+                        <a href="#contact" class="btn">Register Now</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-img" style="background-image: url('image.png');"></div>
+                    <div class="course-content">
+                        <h3>Fashion Styling</h3>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i>3 years</span>
+                            <span><i class="fas fa-user-graduate"></i> Master</span>
+                        </div>
+                        <p>Develop your eye for style and learn to create compelling fashion narratives.</p>
+                        <a href="#contact" class="btn">Register Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Student Gallery</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="lrn1.jfif" alt="Fashion design student work">
+                </div>
+                <div class="gallery-item">
+                    <img src="withmach.jfif" alt="Fashion design student work">
+                </div>
+                <div class="gallery-item">
+                    <img src="grp00.jfif" alt="Fashion design student work">
+                </div>
+                <div class="gallery-item">
+                    <img src="wi.jfif" alt="Fashion design student work">
+                </div>
+                <div class="gallery-item">
+                    <img src="lrn5.jfif" alt="Fashion design student work">
+                </div>
+                <div class="gallery-item">
+                    <img src="withmachgr.jfif" alt="Fashion design student work">
+                    </div>
+                    <div class="gallery-item">
+                    <img src="4.jfif" alt="Fashion design student work">
+                </div>
+                <div class="gallery-item">
+                    <img src="imag.jfif" alt="Fashion design student work">
+                </div>
+                <div class="gallery-item">
+                    <img src="grpnew.jfif" alt="Fashion design student work">
+                </div>
+                <div class="gallery-item">
+                    <img src="sit.jfif" alt="Fashion design student work">
+                    </div>
+                    <div class="gallery-item">
+                    <img src="madstand.jfif" alt="Fashion design student work">
+                </div>
+                <div class="gallery-item">
+                    <img src="art.jfif" alt="Fashion design student work">
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!-- Add this after the gallery section in your HTML -->
+
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our designs </h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="wed.jfif" alt="Fashion design student work">
+                </div>
+                <div class="gallery-item">
+                    <img src="wedd.jfif" alt="Fashion design student work">
+                </div>
+                <div class="gallery-item">
+                    <img src="wes.jfif" alt="Fashion design student work">
+                </div>
+                <div class="gallery-item">
+                    <img src="wee.jfif" alt="Fashion design student work">
+                </div>
+                <div class="gallery-item">
+                    <img src="wedd.jfif" alt="Fashion design student work">
+                </div>
+                 <div class="gallery-item">
+                    <img src="shop.jfif" alt="Fashion design student work">
+                </div>
+                <div class="gallery-item">
+                    <img src="bl.jfif" alt="Fashion design student work">
+                </div>
+                <div class="gallery-item">
+                    <img src="bll.jfif" alt="Fashion design student work">
+                </div>  
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Instructors Section -->
+    <section id="instructors">
+        <div class="container">
+            <div class="section-title">
+                <h2> Instructor</h2>
+            </div>
+            <div class="instructors-grid">
+                
+                <div class="instructor-card">
+                    <img src="mad new.jfif" alt="Evalove Andoh" class="instructor-img">
+                    <h3>Evalove Andoh</h3>
+                    <p>CEO & Founder</p>
+                    <p>A visionary leader in fashion education with over 10 years of industry experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us or call us on (024-355-2341)</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Our Location</h3>
+                            <p>Ofankor Barrier-amalia near Oscartina Hotel<br>Accra Ghana,P.O.Box C1990 cantoment</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Phone Number</h3>
+                            <p>+233 024-355-2341</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email Address</h3>
+                            <p>geraldenfashioninstitute@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h3>Working Hours</h3>
+                            <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Geralden Fashion Institute</h3>
+                    <p>Where creativity meets fashion. Join our prestigious institute and unlock your creative potential<br>We are the number one fashion institute in the suburb of Ga north municipality Accra.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/17kn7rYnCZ/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Courses</h3>
+                    <ul>
+                        <li><a href="#">Fashion Design</a></li>
+                        <li><a href="#">Tailoring</a></li>
+                        <li><a href="#">Fashion Styling</a></li>
+                        <li><a href="#">Textile Design</a></li>
+                        <li><a href="#">Fashion Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Ofankor Barrier, Accra Ghana</li>
+                        <li><i class="fas fa-phone"></i> +233 55 123 4567</li>
+                        <li><i class="fas fa-envelope"></i> info@geraldenfashion.edu</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Geralden Fashion Institute. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Admin Panel -->
+    <div class="admin-panel" id="adminPanel">
+        <div class="admin-container">
+            <button class="close-admin" id="closeAdmin">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="admin-header">
+                <h2>Admin Dashboard</h2>
+            </div>
+            <div class="admin-tabs">
+                <button class="admin-tab active" data-tab="courses-tab">Courses</button>
+                <button class="admin-tab" data-tab="gallery-tab">Gallery</button>
+                <button class="admin-tab" data-tab="announcements-tab">Announcements</button>
+            </div>
+            
+            <div class="admin-content active" id="courses-tab">
+                <div class="admin-form">
+                    <h3>Add New Course</h3>
+                    <form id="addCourseForm">
+                        <div class="form-group">
+                            <label for="courseName">Course Name</label>
+                            <input type="text" id="courseName" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="courseDuration">Duration</label>
+                            <input type="text" id="courseDuration" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="courseLevel">Level</label>
+                            <input type="text" id="courseLevel" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="courseDescription">Description</label>
+                            <textarea id="courseDescription" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Add Course</button>
+                    </form>
+                </div>
+                <div class="admin-list">
+                    <h3>Current Courses</h3>
+                    <div class="admin-item">
+                        <div>
+                            <h4>Fashion Design</h4>
+                            <p>Duration: 12 Months | Level: Advanced</p>
+                        </div>
+                        <div class="admin-actions">
+                            <button class="admin-action edit-btn">Edit</button>
+                            <button class="admin-action delete-btn">Delete</button>
+                        </div>
+                    </div>
+                    <div class="admin-item">
+                        <div>
+                            <h4>Tailoring & Pattern Making</h4>
+                            <p>Duration: 9 Months | Level: Intermediate</p>
+                        </div>
+                        <div class="admin-actions">
+                            <button class="admin-action edit-btn">Edit</button>
+                            <button class="admin-action delete-btn">Delete</button>
+                        </div>
+                    </div>
+                    <div class="admin-item">
+                        <div>
+                            <h4>Fashion Styling</h4>
+                            <p>Duration: 6 Months | Level: Beginner</p>
+                        </div>
+                        <div class="admin-actions">
+                            <button class="admin-action edit-btn">Edit</button>
+                            <button class="admin-action delete-btn">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="admin-content" id="gallery-tab">
+                <div class="admin-form">
+                    <h3>Upload Image to Gallery</h3>
+                    <form id="uploadImageForm">
+                        <div class="form-group">
+                            <label for="imageTitle">Image Title</label>
+                            <input type="text" id="imageTitle" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="imageFile">Select Image</label>
+                            <input type="file" id="imageFile" class="form-control" accept="image/*" required>
+                        </div>
+                        <button type="submit" class="btn">Upload Image</button>
+                    </form>
+                </div>
+                <div class="admin-list">
+                    <h3>Gallery Images</h3>
+                    <div class="admin-item">
+                        <div>
+                            <h4>Student Fashion Show 2023</h4>
+                            <p>Uploaded: 15 Oct 2023</p>
+                        </div>
+                        <div class="admin-actions">
+                            <button class="admin-action delete-btn">Delete</button>
+                        </div>
+                    </div>
+                    <div class="admin-item">
+                        <div>
+                            <h4>Graduate Collection</h4>
+                            <p>Uploaded: 10 Sep 2023</p>
+                        </div>
+                        <div class="admin-actions">
+                            <button class="admin-action delete-btn">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="admin-content" id="announcements-tab">
+                <div class="admin-form">
+                    <h3>Add New Announcement</h3>
+                    <form id="addAnnouncementForm">
+                        <div class="form-group">
+                            <label for="announcementTitle">Title</label>
+                            <input type="text" id="announcementTitle" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="announcementContent">Content</label>
+                            <textarea id="announcementContent" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Add Announcement</button>
+                    </form>
+                </div>
+                <div class="admin-list">
+                    <h3>Current Announcements</h3>
+                    <div class="admin-item">
+                        <div>
+                            <h4>Fall Semester Registration Open</h4>
+                            <p>Registration for the Fall 2023 semester is now open. Limited seats available.</p>
+                        </div>
+                        <div class="admin-actions">
+                            <button class="admin-action edit-btn">Edit</button>
+                            <button class="admin-action delete-btn">Delete</button>
+                        </div>
+                    </div>
+                    <div class="admin-item">
+                        <div>
+                            <h4>Annual Fashion Show</h4>
+                            <p>Join us for our annual student fashion show on December 15th at the Grand Hall.</p>
+                        </div>
+                        <div class="admin-actions">
+                            <button class="admin-action edit-btn">Edit</button>
+                            <button class="admin-action delete-btn">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Form -->
+    <div class="admin-panel" id="loginPanel">
+        <div class="login-form">
+            <h2>Admin Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="form-control" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
